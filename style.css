@@ -1,0 +1,84 @@
+
+.imgCenter{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+    margin-bottom:50px;
+    width:40vw;
+    
+   
+}
+
+.spellimg{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:10vw;
+}
+
+.magicfont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(113, 110, 110);
+    
+}
+
+h1{
+    text-align:center;
+    margin-top: 80px;
+}
+
+body {
+    min-height: 100%;
+    min-width: 100%;
+    /*background: linear-gradient(pink, violet);*/
+    /*background: linear-gradient(rgb(243, 255, 169), rgb(113, 227, 138));*/
+    background:rgba(214, 214, 191, 0.882);
+  }
+
+  #input{
+    text-align: center;
+    margin-top: 80px;
+}
+  
+
+p{
+    text-align: center;
+    font-size: 14px;
+    display:block
+}
+
+p#semititle {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(41, 92, 63)
+}
+
+
+p.smalltitle {
+    text-align: center;
+    font-size: 10px;
+    color: rgb(48, 150, 194)
+}
+
+button {
+    
+    color: rgb(19, 18, 18);
+    padding: 10px 5px;
+    border-radius: 10px;
+    border-radius:0%;
+    cursor:pointer;
+  }
+
+  form#castSpell{
+    text-align: center;
+  }
+
+div#spell{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 60vw;
+    text-align:center;
+  
+}
