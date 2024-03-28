@@ -1,11 +1,11 @@
 
-.imgCenter{
+.Golden_Snitch, #snitchfly{
     display: block;
     margin-left:auto;
     margin-right:auto;
     margin-top: 50px;
-    margin-bottom:50px;
-    width:40vw;
+    margin-bottom:0px;
+    width:30vw;
     
    
 }
@@ -33,7 +33,7 @@ body {
     min-width: 100%;
     /*background: linear-gradient(pink, violet);*/
     /*background: linear-gradient(rgb(243, 255, 169), rgb(113, 227, 138));*/
-    background:rgba(214, 214, 191, 0.882);
+    /* background:rgba(214, 214, 191, 0.882); */
   }
 
   #input{
@@ -62,7 +62,9 @@ p.smalltitle {
 }
 
 button {
-    
+    display:inline;
+    margin:5px;
+
     color: rgb(19, 18, 18);
     padding: 10px 5px;
     border-radius: 10px;
@@ -81,4 +83,21 @@ div#spell{
     width: 60vw;
     text-align:center;
   
+}
+
+.audio-player {
+    display: block;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+}
+    
+.play-btn {
+    cursor:pointer;
+
+    width:2vw
+ 
 }

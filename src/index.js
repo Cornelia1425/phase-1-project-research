@@ -63,8 +63,7 @@ function displayspell (spell){
 
 
     //this is playing Expelliarmus incantation audio. it worked!
-    //const audioElement = new Audio('./assets/audio/Voicy_Expelliarmus - Spell SFX.mp3');
-    const audioElement = new Audio ('https://www.voicy.network/embed/XFMM3Reta0OiL2-Lib7GRg')
+    const audioElement = new Audio('./assets/audio/Voicy_Expelliarmus - Spell SFX.mp3');
     const pElement = document.getElementById('myAudio');
 
     pElement.addEventListener('click', () => {
@@ -79,28 +78,18 @@ const init = ()=>{
         event.preventDefault()
         const input = document.querySelector('input#searchBySpellName')
     
-    // here we grab value by input
-    fetch(`https://api.potterdb.com/v1/spells/?filter[name_cont]=${input.value}`)
-    // https://api.potterdb.com/v1/spells?filter[name_cont]=Spell
-        .then((res)=>res.json())
-        .then((data)=>{
-            data.data.forEach(spellinfo=>{
-            const name = document.querySelector('section#SpellDetailsBySearch p.name')
-            name.textContent = spellinfo.attributes.name
-       /*   const incantation = document.querySelector('section#SpellDetailsBySearch  p.incantation')
-            incantation.textContent = spellinfo.attributes.incantation
-            const hand = document.querySelector('section#SpellDetailsBySearch p.hand')
-            hand.textContent = spellinfo.attributes.hand */
- 
-            
-            displayspell(spell)
-        })
-        })
-
-
+        // here we grab value by input
+        fetch(`https://api.potterdb.com/v1/spells/?filter[name_cont]=${input.value}`)
+            .then((res)=>res.json())
+            .then((data)=>{
+                const searchednames =[]
+                data.data.forEach(spellinfo=>{
+                const name = document.querySelector('section#SpellDetailsBySearch p.name')
+                name.textContent = spellinfo.attributes.name
+                //displayspell(spell)
+                })
+            })
     })
-
-
 }
 
 const main = () =>{
@@ -110,3 +99,41 @@ const main = () =>{
 
 main()
 
+
+/* const playBtn = document.querySelector('.play-btn');
+const audio = document.querySelector('.audio');
+
+playBtn.addEventListener('click', function() {
+if (audio.paused) {
+audio.play();
+playBtn.src = './assets/img/19_pause.png';
+} else {
+audio.pause();
+playBtn.src = './assets/img/18_play.png';
+}
+}); */
+
+
+const playBtn = document.querySelector('.play-btn');
+const audio = document.querySelector('.audio');
+
+playBtn.addEventListener('click', function() {
+  if (audio.paused) {
+    audio.play();
+    playBtn.src = './assets/img/19_pause_darkyellow.png';
+    //playBtn.src = './assets/img/0_snitchfly.gif';
+    document.querySelector("#snitchfly").src = src="./assets/img/0_snitchfly.gif" 
+  } else {
+    audio.pause();
+    // audio.currentTime = 0; // Reset the audio to the beginning
+    playBtn.src = './assets/img/18_play_darkyellow.png';
+    //playBtn.src = './assets/img/0_snitchfly.png';
+    document.querySelector("#snitchfly").src = src="./assets/img/0_snitchfly.png" 
+  }
+});
+
+audio.addEventListener('ended', function() {
+  playBtn.src = './assets/img/18_play_darkyellow.png';
+});
+
+//https://api.potterdb.com/v1/spells/?filter[name_cont]=${blue}
