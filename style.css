@@ -49,9 +49,11 @@ p{
 }
 
 p#semititle {
+    margin-top: 20px;
     text-align: center;
     font-size: 16px;
-    color: rgb(41, 92, 63)
+    color: rgb(41, 92, 63);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -65,10 +67,11 @@ button {
     display:inline;
     margin:5px;
 
-    color: rgb(19, 18, 18);
-    padding: 10px 5px;
+    color: #cc9933;
+    padding: 5px 5px;
     border-radius: 10px;
-    border-radius:0%;
+
+    border:1px;
     cursor:pointer;
   }
 
@@ -101,3 +104,67 @@ div#spell{
     width:2vw
  
 }
+
+/* .container { 
+    display: flex;
+    position: relative;
+    height:50vh;
+    /*background-image: url('./assets/img/3_0_foorprint.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    overflow: hidden;
+} */
+
+
+.container {
+    background-image: url('./assets/img/5_spell_img_1.png');
+    background-size: cover;
+    background-position: center top;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%
+}
+
+.searchBySpellName{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(113, 110, 110);
+}
+
+.contentonscroll{
+    margin-top: 80px;
+}
+
+.side-image-left  {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    height: 50vh; 
+  
+    }
+
+.side-image-right {
+  
+    position: absolute;
+    top: 0;
+    right: -13%;
+    height: 50vh; /* Adjust the height as needed /
+    / You can also use width: 100px; or any other value to set the width */
+ }
+
+ #castle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    height: 170vh; /*how do i make only upper part of the image shown? */
+    
+ }
+ #castle {
+   
+    transform: scale(1.5);
+    width: auto;
+    height: auto;
+ }
