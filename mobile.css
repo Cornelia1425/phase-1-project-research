@@ -137,7 +137,7 @@ div#spell{
     margin-top: 80px;
 }
 
-.side-image-left  {
+/* .side-image-left  {
     position: absolute;
     top: 0;
     left: -10%;
@@ -150,9 +150,22 @@ div#spell{
     position: absolute;
     top: 0;
     right: -13%;
-    height: 50vh; /* Adjust the height as needed /
-    / You can also use width: 100px; or any other value to set the width */
+    height: 50vh; /* Adjust the height as needed */
+    /* You can also use width: 100px; or any other value to set the width 
  }
+ */
+
+ @media (max-width: 768px) {
+    .side-image-left {
+      left: -10%;
+      height: 30vh;
+    }
+  
+    .side-image-right {
+      right: 0;
+      height: 30vh;
+    }
+  }
 
  #castle-container{
     display: flex;
