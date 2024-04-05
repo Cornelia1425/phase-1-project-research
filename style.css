@@ -48,7 +48,7 @@ p{
     display:block
 }
 
-p#semititle {
+p#hereare {
     margin-top: 20px;
     text-align: center;
     font-size: 16px;
@@ -57,9 +57,9 @@ p#semititle {
 }
 
 
-p.smalltitle {
+.smalltitle {
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
     color: rgb(48, 150, 194)
 }
 
@@ -116,27 +116,73 @@ div#spell{
 } */
 
 
-.container {
+/* .container {
+    display: flex;
     background-image: url('./assets/img/5_spell_img_2.png');
     background-size: cover;
     background-position: center top;
-    width: 70%;
-    height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15%
+    width: 70%;
+    height: 100vh;
+    margin-left: 15%;
+}　 */
+
+.container {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    padding: 30px;
+    background-color:bisque;
+    margin:  30px auto;
+    border-radius:20px;
+    max-width: 400px;
+    
+
 }
 
-.searchBySpellName{
+
+
+
+  div.spellDetail {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    padding: 30px;
+    background-color:bisque;
+    margin: 30px auto;
+    border-radius:20px;
+    max-width: 400px
+
+}
+
+
+
+p#displaySearch{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(113, 110, 110);
 }
 
-.contentonscroll{
-    margin-top: 80px;
+input#searchBar{
+    align-items: center;
+    border: 0.7px solid #ccc;
+    border-radius: 12px;
+    color:rgb(77, 77, 77);
+    padding-left: 12px;
+    height:30px
 }
 
+input#tryme{
+    align-items: center;
+    border: 0.7px solid #ccc;
+    border-radius: 12px;
+    color:rgb(77, 77, 77);
+    height:30px
+}
+
+
+
+  
 .side-image-left  {
     position: absolute;
     top: 0;

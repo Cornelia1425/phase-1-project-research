@@ -14,8 +14,11 @@
 ## Resources
 
 # spells
+# will use this: https://api.potterdb.com/
 # API wizard worlds https://wizard-world-api.herokuapp.com/swagger/index.html
 # List of spell https://harrypotter.fandom.com/wiki/List_of_spells
+
+
 
 # API HP OPEN API https://hp-api.onrender.com/
 

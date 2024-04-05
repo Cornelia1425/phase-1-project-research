@@ -116,17 +116,17 @@ div#spell{
 } */
 
 
+
 .container {
-    background-image: url('./assets/img/5_spell_img_2.png');
-    background-size: cover;
-    background-position: center top;
-    width: 70%;
-    height: 100vh;
-    display: flex;
+    display:flex;
     justify-content: center;
-    align-items: center;
-    margin-left: 15%
+    padding: 30px;
+    background-color:bisque;
+    margin: 0 auto 0 auto;
+    border-radius:50px;
+
 }
+
 
 .searchBySpellName{
     font-family: Georgia, 'Times New Roman', Times, serif;

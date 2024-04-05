@@ -44,4 +44,11 @@ css
 
 .myclass{}
 
+margin: up right down left
+
 */
+
+/* 
+Type selectors (e.g., div, p, span) have the lowest specificity.
+Class selectors (e.g., .className) have a higher specificity than type selectors.
+ID selectors (e.g., #elementId) have the highest specificity. */
