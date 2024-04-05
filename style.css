@@ -160,13 +160,37 @@ div#spell{
 
 .searchBySpellName{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(113, 110, 110);
+    /* color: rgb(113, 110, 110); */
+    color: rgb(205, 159, 9);
 }
 
-.contentonscroll{
-    margin-top: 80px;
-    color: rgb(205, 34, 34);
+input#searchBySpellName{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(205, 159, 9);
+    border: 0.7px solid #ccc;
+    border-radius: 12px;
+    padding-left: 12px;
+    height:30px
+}
 
+input#searchBySpellName:focus, input#searchBySpellName:active {
+    outline: 1px inset rgb(205, 159, 9);
+}
+
+input#tryme{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(205, 159, 9);
+    border: 0.7px solid #ccc;
+    border-radius: 12px;
+    height:30px
+}
+input#tryme:hover {
+    background-color: rgb(203, 203, 203);
+}
+
+p#searchBySpellName{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(113, 110, 110);
 }
 
 
