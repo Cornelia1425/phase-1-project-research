@@ -118,8 +118,8 @@ div#spell{
 .searchResultContainer {
     display: flex;
     flex-flow:row wrap;
+    flex-direction: column;
     justify-content: center;
-
     padding: 30px;
     background-color:bisque;
     margin:  30px auto;
