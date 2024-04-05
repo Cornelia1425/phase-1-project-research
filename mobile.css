@@ -31,9 +31,7 @@ h1{
 body {
     min-height: 100%;
     min-width: 100%;
-    /*background: linear-gradient(pink, violet);*/
-    /*background: linear-gradient(rgb(243, 255, 169), rgb(113, 227, 138));*/
-    /* background:rgba(214, 214, 191, 0.882); */
+
   }
 
   #input{
@@ -48,18 +46,19 @@ p{
     display:block
 }
 
-p#semititle {
+p#hereare {
     margin-top: 20px;
-    text-align: center;
+  
+    align-self: center;
     font-size: 16px;
     color: rgb(41, 92, 63);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
-p.smalltitle {
+.smalltitle {
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
     color: rgb(48, 150, 194)
 }
 
@@ -70,7 +69,6 @@ button {
     color: #cc9933;
     padding: 5px 5px;
     border-radius: 10px;
-
     border:1px;
     cursor:pointer;
   }
@@ -100,44 +98,94 @@ div#spell{
     
 .play-btn {
     cursor:pointer;
-
     width:2vw
  
 }
 
-/* .container { 
-    display: flex;
-    position: relative;
-    height:50vh;
-    /*background-image: url('./assets/img/3_0_foorprint.png');
-    background-repeat: no-repeat;
-    background-position: top left;
-    overflow: hidden;
-} */
 
-
-
-.container {
+.searchContainer {
     display:flex;
+    flex-flow:row wrap;
+    text-align: center;
+    padding: 30px;
+    background-color:bisque;
+    margin:  30px auto;
+    border-radius:10px;
+    max-width: 400px;
+    width:100%
+}
+
+.searchResultContainer {
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+
+    padding: 30px;
+    background-color:bisque;
+    margin:  30px auto;
+    border-radius:10px;
+    max-width: 400px;
+    width:100%
+    
+}
+
+
+
+
+  div.spellDetail {
+    display:flex;
+    flex-flow:row wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     padding: 30px;
     background-color:bisque;
-    margin: 0 auto 0 auto;
-    border-radius:50px;
+    margin: 30px auto;
+    border-radius:12px;
+    max-width: 400px
 
 }
+
 
 
 .searchBySpellName{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: rgb(113, 110, 110); */
+    color: rgb(205, 159, 9);
+}
+
+input#searchBySpellName{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(205, 159, 9);
+    border: 0.7px solid #ccc;
+    border-radius: 12px;
+    padding-left: 12px;
+    height:30px
+}
+
+input#searchBySpellName:focus, input#searchBySpellName:active {
+    outline: 1px inset rgb(205, 159, 9);
+}
+
+input#tryme{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(205, 159, 9);
+    border: 0.7px solid #ccc;
+    border-radius: 12px;
+    height:30px
+}
+input#tryme:hover {
+    background-color: rgb(203, 203, 203);
+}
+
+p#searchBySpellName{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(113, 110, 110);
 }
 
-.contentonscroll{
-    margin-top: 80px;
-}
 
-/* .side-image-left  {
+  
+.side-image-left  {
     position: absolute;
     top: 0;
     left: -10%;
@@ -150,22 +198,9 @@ div#spell{
     position: absolute;
     top: 0;
     right: -13%;
-    height: 50vh; /* Adjust the height as needed */
-    /* You can also use width: 100px; or any other value to set the width 
+    height: 50vh; /* Adjust the height as needed /
+    / You can also use width: 100px; or any other value to set the width */
  }
- */
-
- @media (max-width: 768px) {
-    .side-image-left {
-      left: -10%;
-      height: 30vh;
-    }
-  
-    .side-image-right {
-      right: 0;
-      height: 30vh;
-    }
-  }
 
  #castle-container{
     display: flex;

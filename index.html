@@ -27,21 +27,21 @@
  
 
     <!-- search bar -->
-    <div class="container">
-    
-    <form id="castSpell" action="" method="POST">
-        <label class="searchBySpellName">Search By Name:</label>
-        <input id="searchBySpellName" type="text" placeholder="Enter Spell Name">
-        <input id="tryme" type="submit" value="Try me">
-    </form>
-    
-    <section id="SpellDetailsBySearch">
+    <div class="searchContainer">  
+        <form id="castSpell" action="" method="POST">
+            <label class="searchBySpellName">Search By Name:</label>
+            <input id="searchBySpellName" type="text" placeholder="Enter Spell Name">
+            <input id="tryme" type="submit" value="Try me">
+        </form>
+    </div>
+
+    <div class="searchResultContainer">
         <p id="hereare">----- Here Are the Search Results -----</p>
         <p id="searchBySpellName" ></p>
- 
     </div>
 
     <div  class ="spellDetail">
+        <p id="hereare">----- Spell Details -----</p>
         <!--  <p class="smalltitle">Spell Type:</p>
         <p id="spellType"></p> -->
         <p class="smalltitle">Spell Name:</p>
