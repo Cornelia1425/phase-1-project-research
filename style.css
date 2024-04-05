@@ -131,13 +131,13 @@ div#spell{
 .container {
     display:flex;
     flex-flow:row wrap;
-    justify-content: space-around;
+    
     padding: 30px;
     background-color:bisque;
     margin:  30px auto;
-    border-radius:20px;
+    border-radius:10px;
     max-width: 400px;
-    
+    width:100%
 
 }
 
@@ -158,28 +158,16 @@ div#spell{
 
 
 
-p#displaySearch{
+.searchBySpellName{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(113, 110, 110);
 }
 
-input#searchBar{
-    align-items: center;
-    border: 0.7px solid #ccc;
-    border-radius: 12px;
-    color:rgb(77, 77, 77);
-    padding-left: 12px;
-    height:30px
-}
+.contentonscroll{
+    margin-top: 80px;
+    color: rgb(205, 34, 34);
 
-input#tryme{
-    align-items: center;
-    border: 0.7px solid #ccc;
-    border-radius: 12px;
-    color:rgb(77, 77, 77);
-    height:30px
 }
-
 
 
   

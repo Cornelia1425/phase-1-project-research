@@ -100,13 +100,13 @@ const init = ()=>{
                 console.log("searchSpellsName: ", searchSpellsName) */
 
             
-                const searchResultsContainer = document.querySelector("p#displaySearch")
+                const searchResultsContainer = document.querySelector("p#searchBySpellName")
                 searchResultsContainer.innerHTML = "" //add before the loop, clear the existing search result
 
                 spells.data.forEach(spell=>{
                 const searchSpellName = document.createElement("p")
                 searchSpellName.textContent = spell.attributes.name
-                document.querySelector("p#displaySearch").appendChild(searchSpellName)
+                document.querySelector("p#searchBySpellName").appendChild(searchSpellName)
                 //add eventListener
                 searchSpellName.addEventListener("click", event =>{
                     event.preventDefault();
@@ -174,16 +174,18 @@ audio.addEventListener('ended', function() {
 //challenges
 //1 >> done, search should display all spells 
 //2 >> done, all displayed spells should be a clickable button
+
 //3 >> done, when you clicks the button it display the information in the information container, so! 
-// 6 >> done,  for those info in API shows null, shows Null/not found instead of showing blank
-// 9 >> done,  when click new search, reset the search result instead of adding to it
 
 
-//3.5 >> half done, CSS the display should have its own container, and search is an separate container， only shows the information
-// 7 css, name hand, incantation sound, image, put in a grid
-// 8 when click one of the all displayed data, reset the search bar to placeHolder
+
 //4 for some spells that has sound, display them differently, add a special color or add a sound emoji at the end
 //5 for the 12 those who has sound, attached them to the click for sound, create new item in the information
 
-// 10 the background of searchcontainer and displaycontainer, need to be no less than something, and have a margin to the edge, for both styles and mobile ideally
-//
+// 6 >> done,  for those info in API shows null, shows Null/not found instead of showing blank
+
+// 7 css, name hand, incantation sound, image, put in a grid
+
+// 8 when click one of the all displayed data, reset the search bar to placeHolder
+
+// 9 >> done,  when click new search, reset the search result instead of adding to it
