@@ -48,7 +48,7 @@ p{
 
 p#hereare {
     margin-top: 20px;
-  
+    flex-basis: 100%;
     align-self: center;
     font-size: 16px;
     color: rgb(41, 92, 63);
@@ -106,6 +106,7 @@ div#spell{
 .searchContainer {
     display:flex;
     flex-flow:row wrap;
+    flex-wrap: wrap;
     text-align: center;
     padding: 30px;
     background-color:bisque;

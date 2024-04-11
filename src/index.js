@@ -170,22 +170,3 @@ audio.addEventListener('ended', function() {
 
 //https://api.potterdb.com/v1/spells/?filter[name_cont]=${blue}
 
-
-//challenges
-//1 >> done, search should display all spells 
-//2 >> done, all displayed spells should be a clickable button
-
-//3 >> done, when you clicks the button it display the information in the information container, so! 
-
-
-
-//4 for some spells that has sound, display them differently, add a special color or add a sound emoji at the end
-//5 for the 12 those who has sound, attached them to the click for sound, create new item in the information
-
-// 6 >> done,  for those info in API shows null, shows Null/not found instead of showing blank
-
-// 7 css, name hand, incantation sound, image, put in a grid
-
-// 8 when click one of the all displayed data, reset the search bar to placeHolder
-
-// 9 >> done,  when click new search, reset the search result instead of adding to it
