@@ -11,29 +11,35 @@
 
 <body>
     <!-- title -->
+    <div class="background_images_container">
     <h1 class="magicfont">I Open at the Close</h1>
     
     <!-- golden snitch and music -->
     <div class="audio-player">
-        <img id="snitchfly" alt="Golden_Snitch" src="./assets/img/0_snitchfly.png" alt="Golden_Snitch_initial" > <!--class="play-btn" -->
+        <img id="snitchfly" alt="Golden_Snitch" src="./assets/img/0_snitchfly.png" > <!--class="play-btn" -->
         <img src="./assets/img/18_play_darkyellow.png" class="play-btn" alt="Play">  
         <audio src="./assets/audio/01 - Prologue.mp3" class="audio"></audio>
     </div>
 
 
-    <!-- top images -->
-    <img src="./assets/img/3_0_foorprint.png" alt="0_foorprint" class="side-image-left">
-    <img src="./assets/img/3_1_map1.png" alt="3_1_map1" class="side-image-right">
- 
+    <!-- top background images -->
+    <!-- <div id="background_images_container">
+        <img  alt="0_foorprint" class="side-image-left">
+        <img alt="3_1_map1" class="side-image-right">
+    </div> -->
+        <!-- src="./assets/img/3_0_foorprint.png", src="./assets/img/3_1_map1.png" -->
+  
 
     <!-- search bar -->
-    <div class="searchContainer">  
-        <form id="castSpell" action="" method="POST">
-            <label class="searchBySpellName">Search By Name:</label>
-            <input id="searchBySpellName" type="text" placeholder="Enter Spell Name">
-            <input id="tryme" type="submit" value="Try me">
-        </form>
-    </div>
+    
+        <div class="searchContainer" >  
+            <form id="castSpell" action="" method="POST">
+                <label class="searchBySpellName">Search By Name:</label>
+                <input id="searchBySpellName" type="text" placeholder="Enter Spell Name">
+                <input id="tryme" type="submit" value="Try me">
+            </form>
+        </div>
+
 
     <div class="searchResultContainer">
         <p id="hereare">----- Here Are the Search Results -----</p>
@@ -56,6 +62,8 @@
         <img id="spellImg" class="spellimg">
         <!-- <img id="spellImg" class="spellimg" src="./assets/img/sb.jpg" alt="spellImgHolder"  > -->
     </div>
+
+</div>
 
 
 

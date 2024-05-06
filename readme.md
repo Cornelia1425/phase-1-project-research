@@ -22,4 +22,3 @@
 
 # API HP OPEN API https://hp-api.onrender.com/
 
-

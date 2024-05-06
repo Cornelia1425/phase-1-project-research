@@ -48,7 +48,7 @@ p{
 
 p#hereare {
     margin-top: 20px;
-  
+    flex-basis: 100%;
     align-self: center;
     font-size: 16px;
     color: rgb(41, 92, 63);
@@ -106,22 +106,23 @@ div#spell{
 .searchContainer {
     display:flex;
     flex-flow:row wrap;
+    flex-wrap: wrap;
     text-align: center;
     padding: 30px;
-    background-color:bisque;
+    background-color:rgb(255, 228, 196, 0.5);
     margin:  30px auto;
     border-radius:10px;
     max-width: 400px;
-    width:100%
+    width:100%;
 }
 
 .searchResultContainer {
     display: flex;
     flex-flow:row wrap;
+    flex-direction: column;
     justify-content: center;
-
     padding: 30px;
-    background-color:bisque;
+    background-color:rgb(255, 228, 196, 0.5);
     margin:  30px auto;
     border-radius:10px;
     max-width: 400px;
@@ -139,7 +140,7 @@ div#spell{
     align-items: center;
     justify-content: center;
     padding: 30px;
-    background-color:bisque;
+    background-color:rgb(255, 228, 196, 0.5);
     margin: 30px auto;
     border-radius:12px;
     max-width: 400px
@@ -184,23 +185,33 @@ p#searchBySpellName{
 }
 
 
+.background_images_container{
+    display: block;
+    background-image: url("./assets/img/3_0_foorprint.png"), url("./assets/img/3_1_map1.png");
+    background-position: top 10vh left -10%, top 13vh  right -15%;
+    background-repeat: no-repeat;
+    background-size: 47vw; 
+}
   
-.side-image-left  {
+/* .side-image-left  {
+    display:block; 
     position: absolute;
-    top: 0;
+    top: 15vh;
     left: -10%;
-    height: 50vh; 
+    height: 50vw; 
   
     }
 
 .side-image-right {
-  
+    display:block; 
     position: absolute;
-    top: 0;
-    right: -13%;
-    height: 50vh; /* Adjust the height as needed /
+    top: 15vh;
+    right: -15%;
+    height: 50vw;
+ }  */
+ /* Adjust the height as needed /
     / You can also use width: 100px; or any other value to set the width */
- }
+ 
 
  #castle-container{
     display: flex;

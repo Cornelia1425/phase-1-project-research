@@ -89,4 +89,18 @@ fetched data, show the information
 5. CSS, make clickable buttons more obvious, hover over
 
 
-*/
+//
+0411 add toggle component
+make copy of the project
+
+
+
+# 20240506 morning coffee revisit 
+# run command: http-server 
+# challenge 1: obvious fix - mobile the images placement
+# 2: get smaller if i shrink the screen, just like the golden snitch
+# 3: keep the music on loop mode
+#
+#
+
+*/ 
