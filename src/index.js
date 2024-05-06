@@ -151,11 +151,13 @@ const audio = document.querySelector('.audio');
 
 playBtn.addEventListener('click', function() {
   if (audio.paused) {
+    audio.loop = true
     audio.play();
     playBtn.src = './assets/img/19_pause_darkyellow.png';
     //playBtn.src = './assets/img/0_snitchfly.gif';
     document.querySelector("#snitchfly").src = src="./assets/img/0_snitchfly.gif" 
   } else {
+    audio.loop = false;
     audio.pause();
     // audio.currentTime = 0; // Reset the audio to the beginning
     playBtn.src = './assets/img/18_play_darkyellow.png';
@@ -166,7 +168,7 @@ playBtn.addEventListener('click', function() {
 
 audio.addEventListener('ended', function() {
   playBtn.src = './assets/img/18_play_darkyellow.png';
-});
+});9
 
 //https://api.potterdb.com/v1/spells/?filter[name_cont]=${blue}
 

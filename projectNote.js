@@ -97,10 +97,10 @@ make copy of the project
 
 # 20240506 morning coffee revisit 
 # run command: http-server 
-# challenge 1: obvious fix - mobile the images placement
-# 2: get smaller if i shrink the screen, just like the golden snitch
+# challenge 1: obvious fix - mobile the images placement, ?
+# 2: get smaller if i shrink the screen, just like the golden snitch. done! background-image
 # 3: keep the music on loop mode
-#
+# 4: make the color on main search app transparent.
 #
 
 */ 
